@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Zoom Option</title>
+        <link rel="stylesheet" href="./assets/Zoom.css">
+    </head>
+    <body>
+        <input type="number" max=10 min=1 value = 1 id="initalScale">
+        <button class="initalScale_button" onclick="scaleset()">set</button>
+
+        <button id="zoom-in-button">+</button>
+        <button id="zoom-out-button">-</button>
+        
+        <section class="topView" id = "section">
+            <div id="content">
+                <img class="middleImg" src="./assets/img/Screenshot_8.png">
+            
+                <div class="leftSide">
+                    <img src="./assets/img/kari.jpg">
+                    <img src="./assets/img/kari.jpg">
+                    <img src="./assets/img/kari.jpg">
+                </div>
+    
+                <div class="rightSide">
+                    <img class="rightSide_img" src="./assets/img/kari2.jpg">
+                    <img class="rightSide_img" src="./assets/img/kari.jpg">
+                    <img class="rightSide_img" src="./assets/img/kari2.jpg">
+    
+                    <img  class="kirinuki" src="./assets/img/kari3.jpg">
+                </div>
+            </div>
+        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="./assets/Zoom.js"></script>
+    </body>
+</html>

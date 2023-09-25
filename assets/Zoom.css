@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+section {
+    height: 100%;
+    cursor: grab;
+}
+
+.middleImg {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    left: 25%;
+}
+
+.topView{
+    position:relative;
+    width:100vw;
+    height:auto;
+    margin:auto;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-origin: 0 0;
+    transition: transform 0.3s ease-out;
+  }
+
+.contents{
+    position:relative;
+    overflow:hidden;
+}
+
+.first-view-aria-image{
+    width:35%;
+    height:40%;
+
+    border:solid black 5px;
+    position:absolute;
+    left:0;right:0;
+    top:0;bottom:0;
+    margin:auto;
+    z-index:9
+}
+
+.leftSide{
+    position:absolute;
+    width:25%;
+    height:100%;
+    background:red;
+    top:0;
+}
+
+.leftSide img {
+    width: 100%;
+    margin-bottom: -4px;
+    height: 321px;
+}
+
+
+.rightSide{
+    position:absolute;
+    width:25%;
+    height:100%;
+    background:green;
+    bottom:0;
+    right:0;
+    z-index:9;
+}
+
+.rightSide_img {
+    width: 100%;
+    height: 321px;
+    margin-bottom: -4px;
+}
+
+.kirinuki{
+    position:absolute;
+    top:10%;
+    left:-50%;
+    z-index:9999;
+}
+
+#zoom-in-button{
+    position: fixed;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    bottom: 20px;
+    left: 55px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+#zoom-out-button {
+    position: fixed;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    opacity: 0.7;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+input {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 50px;
+    left: 30px;
+    border: none;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+.initalScale_button {
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    top: 50px;
+    left: 140px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    z-index: 1;
+}
