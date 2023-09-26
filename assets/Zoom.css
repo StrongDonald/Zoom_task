@@ -1,150 +1,168 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-body::-webkit-scrollbar{
-    display: none;
+html,
+body {
+  overflow-x: hidden;
+  font-size: 1px;
+}
+@media (max-width: 1366px) {
+  html,
+  body {
+    font-size: 0.0732064422vw;
+  }
+}
+@media (max-width: 767px) {
+  html,
+  body {
+    font-size: 0.2666666667vw;
+  }
 }
 
-section {
-    height: 100%;
-    cursor: grab;
+a {
+  text-decoration: none !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .middleImg {
-    position: absolute;
-    width: 50vw;
-    height: 100vh;
-    top: 0;
-    left: 25%;
+  width: 100vw;
+  height: auto;
+  cursor: grab;
+  z-index: 0;
 }
 
-.topView{
-    position:relative;
-    width:100vw;
-    height:auto;
-    margin:auto;
+.topView {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
 }
 
 #content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: -480px;
-    top: -270px;
-    transform: scale(1.5);
-    transform-origin: 0 0;
-    transition: transform 0.5s ease-out;
-  }
-
-.contents{
-    position:relative;
-    overflow:hidden;
+  width: 100vw;
+  height: auto;
+  position: absolute;
+  transform: scale(2);
+  transform-origin: 0 0;
+  transition: transform 0.5s ease-out;
 }
 
-.first-view-aria-image{
-    width:35%;
-    height:40%;
-
-    border:solid black 5px;
-    position:absolute;
-    left:0;right:0;
-    top:0;bottom:0;
-    margin:auto;
-    z-index:9
+.contents {
+  position: relative;
+  height: auto;
+  overflow: hidden;
 }
 
-.leftSide{
-    position:absolute;
-    width:25%;
-    height:100%;
-    background:red;
-    top:0;
+.first-view-aria-image {
+  width: 35%;
+  height: 40%;
+  border: solid black 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+}
+
+.leftSide {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  background: red;
+  left: 0;
+  top: 0;
+  z-index: 44;
 }
 
 .leftSide img {
-    width: 100%;
-    margin-bottom: -4px;
-    height: 33.333334vh;
+  width: 100%;
+  height: auto;
 }
 
-
-.rightSide{
-    position:absolute;
-    width:25%;
-    height:100%;
-    background:green;
-    bottom:0;
-    right:0;
-    z-index:9;
+.rightSide {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  background: green;
+  top: 0;
+  right: 0;
+  z-index: 9;
 }
 
-.rightSide_img {
-    width: 100%;
-    height: 33.333334vh;
-    margin-bottom: -4px;
+.rightSide img {
+  width: 100%;
+  height: auto;
 }
 
-.kirinuki{
-    position:absolute;
-    top:10%;
-    left:-50%;
-    z-index:9999;
+.kirinuki {
+  position: absolute;
+  top: 10%;
+  left: -50%;
+  z-index: 9999;
 }
 
-#zoom-in-button{
-    position: fixed;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    bottom: 20px;
-    left: 55px;
-    z-index: 1;
-    width: 2em;
-    height: 2em;
+#zoom-in-button {
+  position: fixed;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  bottom: 20px;
+  left: 65px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
 }
 
 #zoom-out-button {
-    position: fixed;
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 3px;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1;
-    width: 2em;
-    height: 2em;
+  position: fixed;
+  background-color: black;
+  border: none;
+  color: white;
+  opacity: 0.7;
+  border-radius: 3px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
 }
 
 input {
-    position: fixed;
-    width: 100px;
-    height: 30px;
-    top: 50px;
-    left: 30px;
-    border: none;
-    border-radius: 3px;
-    z-index: -1;
+  position: fixed;
+  width: 100rem;
+  height: 30rem;
+  top: 50rem;
+  left: 30rem;
+  border: none;
+  border-radius: 3rem;
+  z-index: -2;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 .initalScale_button {
-    position: fixed;
-    width: 50px;
-    height: 30px;
-    top: 50px;
-    left: 140px;
-    font-size: 16px;
-    border: none;
-    border-radius: 3px;
-    background-color: black;
-    color: white;
-    z-index: -1;
-}
+  position: fixed;
+  width: 50rem;
+  height: 30rem;
+  top: 50rem;
+  left: 140rem;
+  font-size: 16rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: black;
+  color: white;
+  z-index: -55;
+}/*# sourceMappingURL=Zoom.css.map */
