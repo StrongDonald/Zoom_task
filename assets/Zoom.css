@@ -15,7 +15,7 @@ section {
 
 .middleImg {
     position: absolute;
-    width: 50%;
+    width: 50vw;
     height: 100vh;
     top: 0;
     left: 25%;
@@ -32,8 +32,11 @@ section {
     width: 100%;
     height: 100%;
     position: absolute;
+    left: -480px;
+    top: -270px;
+    transform: scale(1.5);
     transform-origin: 0 0;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.5s ease-out;
   }
 
 .contents{
@@ -64,7 +67,7 @@ section {
 .leftSide img {
     width: 100%;
     margin-bottom: -4px;
-    height: 321px;
+    height: 33.333334vh;
 }
 
 
@@ -80,7 +83,7 @@ section {
 
 .rightSide_img {
     width: 100%;
-    height: 321px;
+    height: 33.333334vh;
     margin-bottom: -4px;
 }
 
@@ -100,8 +103,8 @@ section {
     bottom: 20px;
     left: 55px;
     z-index: 1;
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
 }
 
 #zoom-out-button {
@@ -110,23 +113,22 @@ section {
     border: none;
     color: white;
     border-radius: 3px;
-    opacity: 0.7;
     bottom: 20px;
     left: 20px;
     z-index: 1;
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
 }
 
 input {
-    position: absolute;
+    position: fixed;
     width: 100px;
     height: 30px;
     top: 50px;
     left: 30px;
     border: none;
     border-radius: 3px;
-    z-index: 1;
+    z-index: -1;
 }
 
 input:focus {
@@ -134,7 +136,7 @@ input:focus {
 }
 
 .initalScale_button {
-    position: absolute;
+    position: fixed;
     width: 50px;
     height: 30px;
     top: 50px;
@@ -144,5 +146,5 @@ input:focus {
     border-radius: 3px;
     background-color: black;
     color: white;
-    z-index: 1;
+    z-index: -1;
 }
